@@ -240,11 +240,9 @@ doi       = {10.1007/978-3-642-19665-2_10},
 url       = {http://dx.doi.org/10.1007/978-3-642-19665-2_10}
 }
 
-
 @article{codina2008,
 author    = {Ramon Codina},
-title     = {Finite element approximation of the hyperbolic
-             wave equation in mixed form},
+title     = {Finite element approximation of the hyperbolic wave equation in mixed form},
 journal   = {Computer Methods in Applied Mechanics and Engineering},
 volume    = {197},
 number    = {13},
@@ -564,6 +562,13 @@ journal   = {J. Sci. Comput.},
 doi       = {10.1007/s10915-010-9430-x}
 }
 
+@book{hood1974,
+author    = {Hood, P. and C. Taylor},
+year      = {1974},
+title     = {Navier Stokes equations using mixed interpolation. Finite-element Methods in Flow Problems},
+publisher = {Huntsville Press}
+}
+
 @incollection{huang2012,
 author    = {C.H. Huang},
 title     = {Modification of the Charnock Wind Stress Formula to Include the Effects of Free Convection and Swell},
@@ -577,11 +582,26 @@ doi       = {10.5772/27003},
 url       = {https://doi.org/10.5772/27003}
 }
 
-@book{hood1974,
-author    = {Hood, P. and C. Taylor},
-year      = {1974},
-title     = {Navier Stokes equations using mixed interpolation. Finite-element Methods in Flow Problems},
-publisher = {Huntsville Press}
+@article{huges1986,
+title     = {A new finite element formulation for computational fluid dynamics: IV. A discontinuity-capturing operator for multidimensional advective-diffusive systems},
+journal   = {Computer Methods in Applied Mechanics and Engineering},
+volume    = {58},
+number    = {3},
+pages     = {329-336},
+year      = {1986},
+issn      = {0045-7825},
+author    = {Thomas J.R. Hughes and Michel Mallet}
+}
+
+@article{huges1989,
+title     = {A new finite element formulation for computational fluid dynamics: VIII. The galerkin/least-squares method for advective-diffusive equations},
+journal   = {Computer Methods in Applied Mechanics and Engineering},
+volume    = {73},
+number    = {2},
+pages     = {173-189},
+year      = {1989},
+issn      = {0045-7825},
+author    = {Thomas J.R. Hughes and Leopoldo P. Franca and Gregory M. Hulbert}
 }
 
 @article{idelsohn2008,
@@ -698,8 +718,7 @@ address   = {Berlin, Heidelberg},
 year      = {2005},
 isbn      = {978-3-540-27206-9},
 url       = {https://doi.org/10.1007/3-540-27206-2_6},
-doi       = {10.1007/3-540-27206-2_6},
-abstract  = {An algebraic approach to the design of multidimensional high-resolution schemes is introduced and elucidated in the finite element context. A centered space discretization of unstable convective terms is rendered local extremum diminishing by a conservative elimination of negative off-diagonal coefficients from the discrete transport operator. This modification leads to an upwind-biased low-order scheme which is nonoscillatory but overly diffusive. In order to reduce the incurred error, a limited amount of compensating antidiffusion is added in regions where the solution is sufficiently smooth. Two closely related flux correction strategies are presented. The first one is based on a multidimensional generalization of total variation diminishing (TVD) schemes, whereas the second one represents an extension of the FEM-FCT paradigm to implicit time-stepping. Nonlinear algebraic systems are solved by an iterative defect correction scheme preconditioned by the low-order evolution operator which enjoys the M-matrix property. The dffusive and antidiffusive terms are represented as a sum of antisymmetric internodal fluxes which are constructed edge-by-edge and inserted into the global defect vector. The new methodology is applied to scalar transport equations discretized in space by the Galerkin method. Its performance is illustrated by numerical examples for 2D benchmark problems.}
+doi       = {10.1007/3-540-27206-2_6}
 }
 
 @inbook{kuzmin2005b,
@@ -714,8 +733,7 @@ address   = {Berlin, Heidelberg},
 year      = {2005},
 isbn      = {978-3-540-27206-9},
 url       = {https://doi.org/10.1007/3-540-27206-2_7},
-doi       = {10.1007/3-540-27206-2_7},
-abstract  = {Algebraic flux correction schemes of TVD and FCT type are extended to systems of hyperbolic conservation laws. The group finite element formulation is employed for the treatment of the compressible Euler equations. An efficient algorithm is proposed for the edge-by-edge matrix assembly. A generalization of Roe's approximate Riemann solver is derived by rendering all off-diagonal matrix blocks positive semi-definite. Another usable low-order method is constructed by adding scalar artificial viscosity proportional to the spectral radius of the cumulative Roe matrix. The limiting of antidiffusive fluxes is performed using a transformation to the characteristic variables or a suitable synchronization of correction factors for the conservative ones. The outer defect correction loop is equipped with a block-diagonal preconditioner so as to decouple the discretized Euler equations and solve them in a segregated fashion. As an alternative, a strongly coupled solution strategy (global BiCGSTAB method with a block-Gau{\ss}-Seidel preconditioner) is introduced for applications which call for the use of large time steps. Various algorithmic aspects including the implementation of characteristic boundary conditions are addressed. Simulation results are presented for inviscid flows in a wide range of Mach numbers.}
+doi       = {10.1007/3-540-27206-2_7}
 }
 
 @article{larese2008,
@@ -725,6 +743,29 @@ title     = {Validation of the particle finite element method (PFEM) for simulat
 journal   = {Engineering Computations},
 volume    = {25.4},
 pages     = {385-425}
+}
+
+@article{leclerc1990,
+title     = {A finite element model of estuarian and river flows with moving boundaries},
+journal   = {Advances in Water Resources},
+volume    = {13},
+number    = {4},
+pages     = {158-168},
+year      = {1990},
+issn      = {0309-1708},
+author    = {Michel Leclerc and Jean-François Bellemare and Guy Dumas and Gouri Dhatt},
+keywords  = {Surface flows, estuary, modelling, finite elements, moving boundary, drying-wetting}
+}
+
+@article{lee2019,
+author    = {Lee, Haegyun},
+year      = {2019},
+month     = {07},
+pages     = {},
+title     = {Implicit discontinuous Galerkin scheme for shallow water equations},
+volume    = {33},
+journal   = {Journal of Mechanical Science and Technology},
+doi       = {10.1007/s12206-019-0625-2}
 }
 
 @article{lie2001,
@@ -1010,6 +1051,19 @@ title     = {The double absorbing boundary method for elastodynamics in homogene
 volume    = {2},
 journal   = {Advanced Modeling and Simulation in Engineering Sciences},
 doi       = {10.1186/s40323-015-0026-8}
+}
+
+@article{roe1981,
+title     = {Approximate Riemann solvers, parameter vectors, and difference schemes},
+journal   = {Journal of Computational Physics},
+volume    = {43},
+number    = {2},
+pages     = {357-372},
+year      = {1981},
+issn      = {0021-9991},
+doi       = {https://doi.org/10.1016/0021-9991(81)90128-5},
+url       = {https://www.sciencedirect.com/science/article/pii/0021999181901285},
+author    = {P.L Roe}
 }
 
 @article{sihag2017,
